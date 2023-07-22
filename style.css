@@ -1,13 +1,17 @@
 
 .container{
+    margin: auto;
+    box-sizing: border-box;
     height: 100vh;
     width: 100vw;
     display:flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 .brochure{
-    width: 100%;
+     height: 100%;
+     width: 100%;
 }
 
