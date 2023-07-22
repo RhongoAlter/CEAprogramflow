@@ -1,11 +1,13 @@
 
 .container{
+    width: 100vw;
     display:flex;
     justify-content: center;
     align-items: center;
+    overflow-x: scroll;
 }
 .brochure{
-    width: 2500px;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
