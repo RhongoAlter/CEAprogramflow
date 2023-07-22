@@ -1,0 +1,10 @@
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.brochure{
+    width: 99vw;
+    height: 99vh;
+}
