@@ -34,7 +34,9 @@
   }
   
   .rotate-this-icon {
+    
     transform: rotate(-90deg);
-    transition: transform 3s; /* Move the transition property here */
+    transition-delay: 1s;
+    transition-duration: transform 3s;
   }
   

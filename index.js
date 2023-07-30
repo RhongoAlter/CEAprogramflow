@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // Check for device orientation change
     window.addEventListener("orientationchange", function () {
       // Check if the device is in portrait mode
-      if (window.matchMedia("(orientation: landscape)").matches) {
+      if (window.innerHeight > window.innerWidth) {
         // Show the rotate icon
         rotateIcon.style.display = "flex";
   
