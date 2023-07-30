@@ -27,11 +27,10 @@
 
 .rotate-icon {
     position: fixed;
-    width: 25px;
-    top: 40%;
-    right: 40%;
+    height: 20px;
+    bottom: 50%;
+    right: 50%;
     /*display: none; /* Hide the icon by default */
     z-index: 9999;
-    transform: rotate(-90deg);
-    transition: 2s;
+
   }

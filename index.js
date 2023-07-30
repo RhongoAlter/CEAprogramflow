@@ -7,6 +7,8 @@ window.addEventListener("DOMContentLoaded", function () {
       if (window.matchMedia("(orientation: portrait)").matches) {
         // Show the rotate icon
         rotateIcon.style.display = "block";
+        rotateIcon.style.transform = 'rotate(-90deg)';
+        rotateIcon.style.transition = '2s';
   
         // Hide the icon after a certain time (e.g., 5 seconds)
         setTimeout(function () {
