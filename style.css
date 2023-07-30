@@ -22,3 +22,19 @@
    }
 }
 
+
+@media (orientation: portrait){
+    .rotate{
+        display: flex;
+        transform: rotate(45deg);
+    }
+}
+.rotate{
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    display: none;
+}
