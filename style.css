@@ -3,34 +3,58 @@ body{
     background-image: url("/CEAprogramflow/images/PHINMA_COC_WELCOME_WEEK__2_-removebg-preview.png");
     background-size: 20%;   
 }
+
+
 .container{
     box-sizing: border-box;
     padding:0;
-    margin: auto 0 auto 0 ;
     box-sizing: border-box;
     width: 98vw;
     display:flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 10px;
-
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+    border-radius: 20px;
 }
+
+.container.outer{
+    margin-top: 15px;
+}
+
 .brochure{
     width: 100%;
-    
-    border-radius: 10px;
+    border: 10px red;
+    border-radius: 20px;
 }
 
 .rotate-icon{
     display: none;
 }
+
+
 @media ( max-width: 767px)  { 
    .container{
     width: 98vw;
-    margin-top: 50%;
-    margin-left: 0;
    }
+
+   .container.inner {
+    margin-top: 25%;
+   }
+
+   .container.outer{
+    margin-top: 15px;
+    margin-bottom: auto;
+   }
+
+   /*.whole-container{
+    margin: auto 0 auto 0;
+    height: 98vh;
+    border: 2px solid red;
+   
+    align-items: center;
+   }*/
+
+   
 
    /* phone rotate style */
     .rotate-icon {
