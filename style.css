@@ -8,7 +8,7 @@ body{
     padding:0;
     margin: auto 0 auto 0 ;
     box-sizing: border-box;
-    width: 97.5vw;
+    width: 98vw;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body{
 }
 @media ( max-width: 767px)  { 
    .container{
-    width: 98vw;
+    width: 97.5vw;
     margin-top: 50%;
     margin-left: 0;
    }
