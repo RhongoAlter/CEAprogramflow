@@ -20,10 +20,7 @@
     margin-top: 50%;
     margin-left: 0;
    }
-}
-
-
-/* phone rotate style */
+   /* phone rotate style */
 .rotate-icon {
     position: fixed;
    display: none; /* Hide the icon by default */
@@ -41,5 +38,9 @@
     width: 60px;
     
   }
+}
+
+
+
   
   
