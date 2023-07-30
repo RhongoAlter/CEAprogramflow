@@ -1,7 +1,7 @@
 
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
-    const rotateMessage = document.getElementById('rotateMessage');
+    const rotateMessage = document.getElementById('rotateIcon');
 
     function checkOrientation() {
         if (window.matchMedia("(orientation: portrait)").matches) {
