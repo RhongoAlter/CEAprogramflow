@@ -1,4 +1,8 @@
 
+body{
+    background-image: url("/CEAprogramflow/images/PHINMA_COC_WELCOME_WEEK__2_-removebg-preview.png");
+    background-size: 20%;   
+}
 .container{
     box-sizing: border-box;
     padding: 0;
