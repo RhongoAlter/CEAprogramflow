@@ -1,23 +1,18 @@
-
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    const rotateMessage = document.getElementById('rotateIcon');
-
-    function checkOrientation() {
-        if (window.matchMedia("(orientation: portrait)").matches) {
-            rotateMessage.style.display = "block";
-            // Start the rotation animation
-            rotateMessage.style.animation = "rotateAnimation 2s infinite linear";
-        } else {
-            rotateMessage.style.display = "none";
-            // Stop the rotation animation
-            rotateMessage.style.animation = "none";
-        }
-    }
-
-    // Check the initial orientation
-    checkOrientation();
-
-    // Listen for orientation changes
-    window.addEventListener('orientationchange', checkOrientation);
-});
+window.addEventListener("DOMContentLoaded", function () {
+    const rotateIcon = document.getElementById("rotateIcon");
+  
+    // Check for device orientation change
+    window.addEventListener("orientationchange", function () {
+      // Check if the device is in portrait mode
+      if (window.matchMedia("(orientation: portrait)").matches) {
+        // Show the rotate icon
+        rotateIcon.style.display = "block";
+  
+        // Hide the icon after a certain time (e.g., 5 seconds)
+        setTimeout(function () {
+          rotateIcon.style.display = "none";
+        }, 5000); // Adjust the time as per your requirement (in milliseconds)
+      }
+    });
+  });
+  
