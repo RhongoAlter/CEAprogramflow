@@ -1,22 +1,9 @@
+// Get the element by its ID
+const rotateIcon = document.getElementById('rotateIcon');
 
-window.addEventListener("DOMContentLoaded", function () {
-    const rotateIcon = document.getElementById("rotateIcon");
-    
-  
-    // Check for device orientation change
-    window.addEventListener("orientationchange", function () {
-      // Check if the device is in portrait mode
-      if (window.matchMedia("(orientation: landscape)").matches) {
-        // Show the rotate icon
-        rotateIcon.style.display = "flex";
-  
-        // Add the CSS class to the icon for the rotation effect
-       
-  
-        // Hide the icon after a certain time (e.g., 5 seconds)
-        setTimeout(function () { rotateIcon.style.display = "none" }, 5000); // Adjust the time as per your requirement (in milliseconds)
+// Set a timeout of 5 seconds (5000 milliseconds) to hide the element
+function timeout() { 
+    setTimeout(function(){rotateIcon.style.display='none'}, 5000);
+}
 
-    }
-    });
-  });
-  
+timeout();

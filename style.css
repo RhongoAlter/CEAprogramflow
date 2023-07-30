@@ -14,6 +14,9 @@
      width: 100%;
 }
 
+.rotate-icon{
+    display: none;
+}
 @media ( max-width: 767px)  { 
    .container{
     width: 98vw;
@@ -21,23 +24,23 @@
     margin-left: 0;
    }
    /* phone rotate style */
-.rotate-icon {
+    .rotate-icon {
     position: fixed;
-   display: none; /* Hide the icon by default */
-   animation-name: rotate;
-   animation-duration: 3s;
-   animation-fill-mode: forwards; /* retains the last keyframe, keeps the -90deg rotation change*/
-  }
+    display: flex; /* Hide the icon by default */
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; /* retains the last keyframe, keeps the -90deg rotation change*/
+    }
 
-  @keyframes rotate{
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-90deg);}
-  }
-  
-  .rotate-icon img {
-    width: 60px;
+    @keyframes rotate{
+        from {transform: rotate(0deg);}
+        to {transform: rotate(-90deg);}
+    }
     
-  }
+    .rotate-icon img {
+        width: 60px;
+        
+    }
 }
 
 
