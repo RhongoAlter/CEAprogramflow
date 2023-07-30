@@ -24,13 +24,17 @@
 
 
 /* phone rotate style */
-
 .rotate-icon {
     position: fixed;
-    height: 20px;
-    bottom: 50%;
-    right: 50%;
-    /*display: none; /* Hide the icon by default */
-    z-index: 9999;
-
+   display: none; /* Hide the icon by default */
   }
+  
+  .rotate-icon img {
+    width: 60px;
+  }
+  
+  .rotate-this-icon {
+    transform: rotate(-90deg);
+    transition: transform 3s; /* Move the transition property here */
+  }
+  
