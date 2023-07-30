@@ -1,9 +1,4 @@
 
-
-.whole-container{
-    border: 1px solid black;
-    width: 98vw;
-}
 .container{
     box-sizing: border-box;
     padding: 0;
