@@ -27,7 +27,7 @@ body{
 }
 @media ( max-width: 767px)  { 
    .container{
-    width: 96vw;
+    width: 89vw;
     margin-top: 50%;
     margin-left: 0;
    }
