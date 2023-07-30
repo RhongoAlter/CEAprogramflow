@@ -23,18 +23,39 @@
 }
 
 
-@media (orientation: portrait){
-    .rotate{
-        display: flex;
-        transform: rotate(45deg);
-    }
-}
-.rotate{
-    position: absolute;
-    z-index: 1;
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-    background-color: antiquewhite;
+/* phone rotate style */
+
+.rotate-icon {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.rotate-icon img {
+    display: block;
+    width: 80px; /* Adjust the size of the icon as needed */
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.rotate-icon span {
+    display: block;
+    text-align: center;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
